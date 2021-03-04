@@ -1,63 +1,129 @@
 * {
-    font-family: 'Literata', serif;
+  font-family: "Literata", serif;
 }
 
 body {
-    background-image: url("./image/remote-work-project-best-practices-660x330.png");
-    background-size: cover;
-    width: 70%;
-    margin: auto;
-    height: 100%;
+  background-color: #2c93f3;
+  background-size: cover;
+  width: 70%;
+  margin: auto;
+  height: 100%;
 }
 
-.container{
-background-color: #2c93f3;
-align-items: center;
-display: flex;
-flex-direction: column;
-width: 100%;
-height: 100%;
+.container {
+  background-color: #2c93f3;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border: 5px solid black;
+  border-radius: 20px;
+  margin: 30px 0;
 }
 
-h1{
-    font-size: 40px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    color: white;
+h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: white;
 }
 
-.container_header{
-    height: inherit;
-    width: inherit;
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container_header {
+  height: inherit;
+  width: inherit;
+  margin: 0 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
 
 .container_header input {
-    margin: 20px;
-    width: 80%;
-    height: 50px;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    font-weight: bold;
-    background-color: rgba(44, 147, 230, 0.5);
-    border-bottom: 2px solid black;
-    animation: shakeY;
-animation-duration: 5s;
+  margin: 20px;
+  width: 80%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: rgba(44, 147, 230, 0.5);
+  border-bottom: 4px solid white;
+  animation: shakeY;
+  animation-duration: 0.5s;
+  padding-left: 30px;
+  font-size: 20px;
 }
 
-.container_header input::placeholder{
-color: white;
-padding-left: 20px;
-font-size: 15px;
-
-
+.container_header input::placeholder {
+  color: white;
+  padding-left: 20px;
+  font-size: 15px;
+  letter-spacing: 2px;
 }
 
-.container_task{
-    height: 100%;
-    background-color: violet;
+.container_header input:focus {
+  background-color: white;
+}
+
+.container_header button {
+  width: 80%;
+  height: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 20px;
+  border: none;
+  border-radius: 40px;
+  outline: none;
+  cursor: pointer;
+}
+
+.container_header button:hover {
+  animation: rubberBand;
+  animation-duration: 0.2s;
+}
+
+.container_task {
+  height: 100%;
+  width: 100%;
+  margin: 20px;
+  border: 5px solid black;
+  border-bottom: none;
+  margin-bottom: 0;
+  border-radius: 20px;
+  background-color: #ffeaa7;
+}
+
+.list_task {
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.list_task li {
+  display: flex;
+  margin: 15px 0;
+  padding: 0 20px;
+  border: 5px solid black;
+  height: 95px;
+  border-top: none;
+  font-weight: bold;
+  
+}
+
+
+.list_task li p {
+  width: 640px;
+  flex-wrap: wrap;
+  height: 80px;
+}
+
+.list_task li button {
+  height: 30px;
+  margin: auto 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 90px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
 }
