@@ -10,5 +10,8 @@
     "tareas"
   ],
   "author": "jesus galvis",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sweetalert2": "^10.15.5"
+  }
 }

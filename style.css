@@ -29,6 +29,11 @@ h1 {
   color: white;
 }
 
+.name_title{
+  margin: 0;
+  text-transform: uppercase;
+}
+
 .container_header {
   height: inherit;
   width: inherit;
@@ -126,4 +131,8 @@ h1 {
   color: black;
   font-weight: bold;
   cursor: pointer;
+}
+
+.complete{
+  background:  green !important;
 }
