@@ -1,3 +1,29 @@
+//modo nocturno
+document.getElementById('id-sun').onclick = function(){
+  console.log('dia');
+  document.getElementById('main-principal').classList.remove('dark-mode')
+  document.querySelector("#list_task").classList.remove('dark-mode')
+  document.querySelector("#container").classList.remove('dark-mode')
+  document.getElementById('id-moon').classList.remove('active')
+  this.classList.add('active')
+}
+
+
+document.getElementById('id-moon').onclick = function(){
+  console.log('noche');
+  document.getElementById('main-principal').classList.add('dark-mode')
+  document.querySelector("#list_task").classList.add('dark-mode')
+  document.querySelector("#container").classList.add('dark-mode')
+  document.getElementById('id-sun').classList.remove('active')
+  this.classList.add('active')
+}
+
+
+
+
+
+
+//tareas
 const $title = document.querySelector("#name");
 const $task = document.querySelector("#input");
 const $btn_add = document.querySelector("#btn_add");
@@ -41,7 +67,7 @@ Swal.fire("Well done")
 // .then(() => $list.removeChild($cur_task))
 }
 
+(()=>{
+  $btn_add.addEventListener("click", render);
 
-
-
-$btn_add.addEventListener("click", render);
+})()

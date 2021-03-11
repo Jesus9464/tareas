@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
             href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@1,200&display=swap"
-            rel="stylesheet">
-        <link href="./image/icons8-tarea-fallida-64.png" rel="shortcut icon"
-            href="favicon.png">
-        <link rel="stylesheet" href="style.css">
+            rel="stylesheet"
+            />
+        <link
+            href="./image/icons8-tarea-fallida-64.png"
+            rel="shortcut icon"
+            href="favicon.png"
+            />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+            />
         <title>tareas</title>
     </head>
-    <body>
-        <div class="container">
+    <body id="main-principal" class="body">
+        <div class="container-btn-mode">
+            <div id="id-sun" class="btn-mode sun active">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div id="id-moon" class="btn-mode moon">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+        <div class="container" id="container">
             <h1>Things to do?</h1>
             <h1 id="name" class="name_title"></h1>
             <div class="container_header">
-                <input type="text" placeholder="add task" id="input">
+                <input type="text" placeholder="add task" id="input" />
                 <button id="btn_add">Add</button>
             </div>
-            <div class="container_task">
-                <ol id="list_task" class="list_task" >
-                </ol>
+            <div class="container_task" id="container">
+                <ol id="list_task" class="list_task"></ol>
             </div>
         </div>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
