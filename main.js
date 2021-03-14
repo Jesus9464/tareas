@@ -42,11 +42,8 @@ function noche(e) {
     $list.classList.add(color);
     $container.classList.add(color);
     $sun.classList.remove(active);
-<<<<<<< HEAD
-    $moon.classList.add("active");
-=======
     $moon.classList.add(active)
->>>>>>> 34e10d53d8a16114a8c31160ff7eee8b01eca68a
+
   }
 })()
 
